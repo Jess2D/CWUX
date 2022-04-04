@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a27baeba24.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <title>Product</title>
+</head>
+<body>
+      <!-- ***** Header Area Starts ***** -->
+      <header>
+        <div class="container">
+          <div class="top top-color">
+            <div class="back icon"><img src="./icons/back.svg" ></div>
+            <div class="top-tittle"><h4>Product</h4></div>
+            <div class="cart icon"><img src="./icons/cart.svg" ></div>
+          </div>
+        </div>
+      </header>
+      <!-- ***** Header Area End ***** -->
+
+      <!-- ***** Where the content goes ***** -->
+        <div class="main">
+            <!-- ***** Where whe edit the margin ***** -->
+            <div class="container">
+              <div class="image-product">
+                <img src="./products/kobby-mendez-q54Oxq44MZs-unsplash.jpg" alt="image product">
+              </div>
+            <div class="product-name">
+              Donut 
+            </div>
+            <form class="product">
+              <label for="quantity">Quantity:</label>
+              <div class="inputStepper">
+                <button class="decrement primary">
+                  -
+                </button>
+                <input type="number" min="0" max="5" step="5" value="1" id="stepper" readOnly/>
+                <button class="increment primary">
+                  +
+                </button>
+              </div>
+              <label for="note">Note:</label>
+              <textarea id="note" name="note">Enter text here...</textarea>
+              <input class="button"type="submit" value="Add">
+            </form>
+            
+        
+            <!-- ***** end of the margin ***** -->
+        </div>
+    <!-- ***** End of main ***** -->
+
+</body>
+</html>

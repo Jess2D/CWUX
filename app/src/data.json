@@ -1,0 +1,64 @@
+{"coffees":[
+    { "type":"long black", "size":"regular", "price" : "4.2", "img": "./products/shortB"},
+    { "type":"long black", "size":"large", "price" : "4.2" },
+    { "type":"short black", "size":"regular", "price" : "4.2" },
+    { "type":"short black", "size":"regular", "price" : "4.2" },
+    { "type":"flat white", "size":"regular", "price" : "4.7" },
+    { "type":"long black", "size":"regular", "price" : "5.2" }
+],
+
+"drinksExtras":[
+    { "name":"Almond Milk", "price":"0.8" },
+    { "name":"Oat Milk", "price":"0.8" },
+    { "name":"Coconut Milk", "price":"0.8" },
+    { "name":"Soy Milk", "price":"0.8" },
+    { "name":"Cream", "price":"0.8" },
+    { "name":"Decaf ", "price":"0.8" },
+    { "name":"Extra Shot", "price":"0.8" },
+    { "name":"Vanila Shot", "price":"0.6" },
+    { "name":"Hazelnut Shot", "price":"0.6" },
+    { "name":"Caramel Shot", "price":"0.6" }
+  ],
+
+  "winterWarmers" : [
+    { "name":"Lemon Honey and Ginger", "price":"5.2" },
+    { "name":"Hot Black Curant", "price":"5.2" }
+  ],
+
+
+  "teas" : [
+    { "name":"Earl Gray", "price":"4.5" },
+    { "name":"English Breakfast", "price":"4.5" },
+    { "name":"Chocolate Mint", "price":"4.5" },
+    {"name":"Apple Cinnamon", "price":"4.5" },
+    {"name":"Paris", "price":"4.5" },
+    {"name":"Lemon Herbal", "price":"4.5" },
+    {"name":"Peppermint", "price":"4.5" },
+    {"name":"Strawberry Kiwifruit", "price":"4.5" }
+  ],
+
+  "smothies" : [
+    {"name":"Mixed Berry", "price":"9.5" },
+    {"name":"Tropical", "price":"9.5" },
+    {"name":"Peanut Butter Protein", "price":"9.5" }
+  ],
+
+  "shakes" : [
+    {"name":"Vanilla", "price":"7.2" },
+    {"name":"Chocolate", "price":"7.2" },
+    {"name":"Caramel", "price":"7.2" },
+    {"name":"Banana", "price":"7.2" },
+    {"name":"Lime", "price":"7.2" },
+    {"name":"Strawberry", "price":"7.2" }
+  ],
+
+
+  "iced" : [
+    {"name":"Chocolate", "price":"6" },
+    {"name":"Coffee", "price":"6.8" },
+    {"name":"Mocha", "price":"6.8" }
+  ]
+
+
+}
+

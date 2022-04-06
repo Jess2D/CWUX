@@ -1,0 +1,205 @@
+/*
+    In this project we are using OOCSS structure.
+    Structure and design files are separate files. 
+    Sturucture means : “width, height, padding, margin , position” . 
+    Design means: “border, color, font, background”. 
+    Design files and Sturucture files must be seperated.
+    More: OOCSS website: http://oocss.org/
+*/
+
+$primary0: #6F4D44;
+$primary1: #D37130;
+$primary2: #B65126;
+$primary3: #F0B75D;
+$gray100:#D3D0D0;
+$cwux-color: #FFF;
+
+$cwux-font:  'Poppins', sans-serif;
+$cwux-mobile-fontsize: 16px;
+$cwux-tablet-fontsize: 24px;
+$mobile-h1: 32px;
+$mobile-h2: 24px;
+$mobile-h3: 22px;
+$mobile-h4: 18px;
+$tablet-h1: 50px;
+$tablet-h2: 42px;
+$tablet-h3: 32px;
+$tablet-h4: 24px;
+
+$border-radius: 15px;
+
+@mixin responsive ($display, $content){
+    display: $display;
+    justify-content: $content;
+}
+
+
+body{
+    font-family: $cwux-font;
+}
+
+h2 {
+    font: {
+        size: $mobile-h2;
+        weight: 600;
+    }
+    margin: 0;
+}
+
+.container {
+    padding:12px;
+}
+.radius{
+    border-radius: $border-radius;
+}
+
+/* Mobile: */
+header{
+    width: 100%;
+}
+
+.top{
+    @include responsive(flex, space-between);
+    flex-direction: row;
+}
+
+.top-color{
+    font-size: $mobile-h2;
+    color: $primary1;
+}
+.top img {
+    width: 24px;
+    height: 24px;
+}
+
+.item-img img{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+
+.card{
+    @include responsive(flex, center);
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 40%; 
+    border-radius: 15px; 
+}
+
+.card-color{
+    background-color: $primary1;
+    color:$cwux-color;
+}
+.item-legend {
+    text-align: center;
+    
+}
+
+.card-menu{
+    background-color: $primary1;
+}
+
+.hot-drinks-menu{
+    @include responsive(flex, center);
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.top-tittle{
+    font-family: $cwux-font;
+}
+
+.image-product { 
+    @include responsive(flex, center);
+}
+
+.image-product img {
+    width: 100%;
+    height: 200px;
+    border-radius: $border-radius;
+}
+
+.product-name{
+    font-size: $mobile-h2;
+    margin-top: 15px;
+}
+
+.product{
+    display:flex;
+    flex-flow: column wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.button{
+    margin-top: 35px;
+    color: $cwux-color;
+    background-color: $primary1;
+    border: none;
+    padding: 12px;
+    border-radius: $border-radius;
+}
+/*Inpput Stepper*/
+.inputStepper{
+    display: flex;
+    background-color:$cwux-color;
+}
+input[type="number"]{
+    -moz-appearance: textfield;
+    text-align: center;
+    font-size: $cwux-mobile-fontsize;
+    border: none;
+    background-color:$cwux-color;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.primary{
+    color:$cwux-color;
+    background-color: $primary1;
+    border: none;
+}
+
+.decrement{
+    padding: 10px 10px 10px 14px;
+    border-radius: 7px 0 0 7px;
+    font-size: 20px;
+}
+
+.increment {
+    padding: 10px 14px 10px 10px;
+    border-radius: 0 7px 7px 0;
+    
+}
+
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+    h2 {
+        font-size: $tablet-h2;
+    }
+
+    .top img {
+        width: 50px;
+        height: 50px;
+    }
+
+    p{
+        font-size: $cwux-tablet-fontsize;
+    }
+
+    .card {
+        width: 32%;
+    }
+
+}
+
+
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+    
+
+  }

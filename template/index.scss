@@ -132,6 +132,7 @@ header{
 }
 
 .button{
+    width: 100%;
     margin-top: 35px;
     color: $cwux-color;
     background-color: $primary1;
@@ -175,6 +176,9 @@ input::-webkit-outer-spin-button {
     border-radius: 0 7px 7px 0;
     
 }
+footer{
+    display: flex;
+}
 
 /* For tablets: */
 @media only screen and (min-width: 600px) {
@@ -200,6 +204,12 @@ input::-webkit-outer-spin-button {
 
 /* For desktop: */
 @media only screen and (min-width: 768px) {
-    
+    .image-product img{
+        height: 400px;
+    }
+
+    .hot-drinks-menu{
+        flex-wrap: nowrap;
+    }
 
   }

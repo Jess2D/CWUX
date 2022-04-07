@@ -7,14 +7,14 @@
     More: OOCSS website: http://oocss.org/
 */
 
-$primary0: #6F4D44;
-$primary1: #D37130;
-$primary2: #B65126;
-$primary3: #F0B75D;
-$gray100:#D3D0D0;
-$cwux-color: #FFF;
+$primary0: #6f4d44;
+$primary1: #d37130;
+$primary2: #b65126;
+$primary3: #f0b75d;
+$gray100: #d3d0d0;
+$cwux-color: #fff;
 
-$cwux-font:  'Poppins', sans-serif;
+$cwux-font: "Poppins", sans-serif;
 $cwux-mobile-fontsize: 16px;
 $cwux-tablet-fontsize: 24px;
 $mobile-h1: 32px;
@@ -28,236 +28,237 @@ $tablet-h4: 24px;
 
 $border-radius: 15px;
 
-@mixin responsive ($display, $content){
-    display: $display;
-    justify-content: $content;
+@mixin responsive($display, $content) {
+  display: $display;
+  justify-content: $content;
 }
 
-
-body{
-    font-family: $cwux-font;
+body {
+  font-family: $cwux-font;
 }
 
 h2 {
-    font: {
-        size: $mobile-h2;
-        weight: 600;
-    }
-    margin: 0;
+  font: {
+    size: $mobile-h2;
+    weight: 600;
+  }
+  margin: 0;
 }
 
 .container {
-    padding:12px;
+  padding: 12px;
 }
-.radius{
-    border-radius: $border-radius;
+.radius {
+  border-radius: $border-radius;
 }
 
 /* Mobile: */
-header{
-    width: 100%;
+header {
+  width: 100%;
 }
 
-.top{
-    @include responsive(flex, space-between);
-    flex-direction: row;
+.top {
+  @include responsive(flex, space-between);
+  flex-direction: row;
 }
 
-.top-color{
-    font-size: $mobile-h2;
-    color: $primary1;
+.top-color {
+  font-size: $mobile-h2;
+  color: $primary1;
 }
 .top img {
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
 }
 
-.item-img img{
-    width: 100%;
-    border-radius: 15px 15px 0 0;
+.item-img img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
 }
 
-
-.card{
-    @include responsive(flex, center);
-    flex-wrap: wrap;
-    gap: 5px;
-    width: 40%; 
-    border-radius: 15px; 
+.card {
+  @include responsive(flex, center);
+  flex-wrap: wrap;
+  gap: 5px;
+  width: 40%;
+  border-radius: 15px;
 }
 
-.card-color{
-    background-color: $primary1;
-    color:$primary1;
+.card-color {
+  background-color: $primary1;
+  color: $primary1;
 }
 
-.card-color2{
-    background-color: $gray100;
-    color:$primary1;
+.card-color2 {
+  background-color: $gray100;
+  color: $primary1;
 }
 .item-legend {
-    text-align: center;
-    
+  text-align: center;
 }
 
 .item-footer {
-    @include responsive(flex, center);
-    align-items: center;
-    flex-direction: column;
-    padding: 19px;
+  @include responsive(flex, center);
+  align-items: center;
+  flex-direction: column;
+  padding: 19px;
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 .item-footer .inputStepper {
-   background-color: $gray100;
-   margin-top: 12px;
-   align-self: center;
+  background-color: $gray100;
+  margin-top: 12px;
+  align-self: center;
 }
 
-
-.card-menu{
-    background-color: $primary1;
+.card-menu {
+  background-color: $primary1;
 }
 
-.hot-drinks-menu{
-    @include responsive(flex, center);
-    flex-wrap: wrap;
-    gap: 35px;
+.hot-drinks-menu {
+  @include responsive(flex, center);
+  flex-wrap: wrap;
+  gap: 35px;
 }
 
-.top-tittle{
-    font-family: $cwux-font;
+.top-tittle {
+  font-family: $cwux-font;
 }
 
 .image-product {
-    @include responsive(flex, center);
+  @include responsive(flex, center);
 }
 
-.list-item-top, .list-item-quant{
-    @include responsive(flex, center);
- }
+.list-item-top,
+.list-item-quant {
+  @include responsive(flex, center);
+}
 
 .image-product img {
-    width: 100%;
-    height: 200px;
-    border-radius: $border-radius;
+  width: 100%;
+  height: 200px;
+  border-radius: $border-radius;
 }
 
-.product-name{
-    font-size: $mobile-h2;
-    margin-top: 15px;
+.product-name {
+  font-size: $mobile-h2;
+  margin-top: 15px;
 }
 
-.product{
-    display:flex;
-    flex-flow: column wrap;
-    gap: 10px;
-    margin-top: 10px;
+.product {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+  margin-top: 10px;
 }
 
-.button{
-    width: 100%;
-    margin-top: 35px;
-    color: $cwux-color;
-    background-color: $primary1;
-    border: none;
-    padding: 12px;
-    border-radius: $border-radius;
+.button {
+  width: 100%;
+  margin-top: 35px;
+  color: $cwux-color;
+  background-color: $primary1;
+  border: none;
+  padding: 12px;
+  border-radius: $border-radius;
 }
 
 /* List Products*/
-.list{
-    @include responsive(flex, center);
-    flex-wrap: wrap;
-
- }
-
- .list-item{
-    color: $primary1;
-    margin:5px;
- }
-
- .list-item-top img{
-     border-radius: 15px 15px 0 0;
- }
-.list-item-bottom {
-    border-radius: 0 0 15px 15px;
-    background-color: $gray100
+.list {
+  @include responsive(flex, space-between);
+  flex-wrap: wrap;
 }
 
+.list-item {
+  color: $primary1;
+  padding: 9px;
+}
+
+list-item-top,
+.list-item-quant {
+  display: flex;
+  justify-content: center;
+}
+.list-item-top img {
+  border-radius: 15px 15px 0 0;
+}
+.list-item-bottom {
+  border-radius: 0 0 15px 15px;
+  background-color: $gray100;
+}
 
 /*Inpput Stepper*/
-.inputStepper{
-    display: flex;
+.inputStepper {
+  display: flex;
 }
-input[type="number"]{
-    -moz-appearance: textfield;
-    text-align: center;
-    font-size: $cwux-mobile-fontsize;
-    border: none;
-    background-color:$cwux-color;
+input[type="number"] {
+  -moz-appearance: textfield;
+  text-align: center;
+  font-size: $cwux-mobile-fontsize;
+  border: none;
+  background-color: $cwux-color;
 }
 
 input::-webkit-inner-spin-button,
 input::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.primary{
-    color:$cwux-color;
-    background-color: $primary1;
-    border: none;
+.primary {
+  color: $cwux-color;
+  background-color: $primary1;
+  border: none;
 }
 
-.decrement{
-    padding: 10px 10px 10px 14px;
-    border-radius: 7px 0 0 7px;
-    font-size: 20px;
+.decrement {
+  padding: 10px 10px 10px 14px;
+  border-radius: 7px 0 0 7px;
+  font-size: 20px;
 }
 
 .increment {
-    padding: 10px 14px 10px 10px;
-    border-radius: 0 7px 7px 0;
-    
+  padding: 10px 14px 10px 10px;
+  border-radius: 0 7px 7px 0;
 }
-footer{
-    display: flex;
+footer {
+  display: flex;
 }
 
 /* For tablets: */
 @media only screen and (min-width: 600px) {
-    h2 {
-        font-size: $tablet-h2;
-    }
+  h2,
+  .button {
+    font-size: $tablet-h2;
+  }
 
-    .top img {
-        width: 50px;
-        height: 50px;
-    }
+  .top img {
+    width: 50px;
+    height: 50px;
+  }
 
-    p{
-        font-size: $cwux-tablet-fontsize;
-    }
+  p,
+  .list-item {
+    font-size: $cwux-tablet-fontsize;
+  }
 
-    .card {
-        width: 32%;
-    }
-
+  .card {
+    width: 32%;
+  }
 }
-
 
 /* For desktop: */
 @media only screen and (min-width: 768px) {
-    .image-product img{
-        height: 400px;
-    }
-
-    .hot-drinks-menu{
-        flex-wrap: nowrap;
-    }
-
+  body {
+    font-size: $tablet-h4;
   }
+  .image-product img {
+    height: 400px;
+  }
+
+  .hot-drinks-menu {
+    flex-wrap: nowrap;
+  }
+}

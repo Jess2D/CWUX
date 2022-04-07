@@ -88,12 +88,35 @@ header{
 
 .card-color{
     background-color: $primary1;
-    color:$cwux-color;
+    color:$primary1;
+}
+
+.card-color2{
+    background-color: $gray100;
+    color:$primary1;
 }
 .item-legend {
     text-align: center;
     
 }
+
+.item-footer {
+    @include responsive(flex, center);
+    align-items: center;
+    flex-direction: column;
+    padding: 19px;
+}
+
+.center {
+    text-align: center;
+}
+
+.item-footer .inputStepper {
+   background-color: $gray100;
+   margin-top: 12px;
+   align-self: center;
+}
+
 
 .card-menu{
     background-color: $primary1;
@@ -109,9 +132,13 @@ header{
     font-family: $cwux-font;
 }
 
-.image-product { 
+.image-product {
     @include responsive(flex, center);
 }
+
+.list-item-top, .list-item-quant{
+    @include responsive(flex, center);
+ }
 
 .image-product img {
     width: 100%;
@@ -140,10 +167,31 @@ header{
     padding: 12px;
     border-radius: $border-radius;
 }
+
+/* List Products*/
+.list{
+    @include responsive(flex, center);
+    flex-wrap: wrap;
+
+ }
+
+ .list-item{
+    color: $primary1;
+    margin:5px;
+ }
+
+ .list-item-top img{
+     border-radius: 15px 15px 0 0;
+ }
+.list-item-bottom {
+    border-radius: 0 0 15px 15px;
+    background-color: $gray100
+}
+
+
 /*Inpput Stepper*/
 .inputStepper{
     display: flex;
-    background-color:$cwux-color;
 }
 input[type="number"]{
     -moz-appearance: textfield;

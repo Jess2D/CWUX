@@ -167,7 +167,7 @@ header {
 
 /* List Products*/
 .list {
-  @include responsive(flex, space-between);
+  @include responsive(flex, flex-start);
   flex-wrap: wrap;
 }
 
@@ -225,6 +225,10 @@ input::-webkit-outer-spin-button {
   padding: 10px;
   border-radius: 0 7px 7px 0;
 }
+.list-item-quant {
+  padding: 12px;
+}
+
 footer {
   display: flex;
 }
@@ -244,6 +248,7 @@ footer {
   p,
   .list-item {
     font-size: $cwux-tablet-fontsize;
+    justify-content: flex-start;
   }
 
   .card {
@@ -276,6 +281,11 @@ footer {
   }
   .image-product img {
     height: 400px;
+  }
+
+  .list-item {
+    font-size: $cwux-tablet-fontsize;
+    justify-content: flex-start;
   }
 
   .hot-drinks-menu {

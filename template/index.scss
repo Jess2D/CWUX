@@ -86,9 +86,12 @@ header {
 
 .card-color {
   background-color: $primary1;
-  color: $primary1;
+  color: $cwux-color;
 }
 
+a:link {
+  text-decoration: none;
+}
 .card-color2 {
   background-color: $gray100;
   color: $primary1;

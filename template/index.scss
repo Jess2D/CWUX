@@ -16,7 +16,7 @@ $cwux-color: #fff;
 
 $cwux-font: "Poppins", sans-serif;
 $cwux-mobile-fontsize: 16px;
-$cwux-tablet-fontsize: 24px;
+$cwux-tablet-fontsize: 32px;
 $mobile-h1: 32px;
 $mobile-h2: 24px;
 $mobile-h3: 22px;
@@ -173,13 +173,15 @@ header {
 
 .list-item {
   color: $primary1;
-  padding: 9px;
+  padding: 3px;
 }
 
 list-item-top,
-.list-item-quant {
+.list-item-quant,
+.list-item-name {
   display: flex;
   justify-content: center;
+  padding-bottom: 5px;
 }
 .list-item-top img {
   border-radius: 15px 15px 0 0;
@@ -187,6 +189,7 @@ list-item-top,
 .list-item-bottom {
   border-radius: 0 0 15px 15px;
   background-color: $gray100;
+  width: 100px;
 }
 
 /*Inpput Stepper*/
@@ -214,13 +217,12 @@ input::-webkit-outer-spin-button {
 }
 
 .decrement {
-  padding: 10px 10px 10px 14px;
+  padding: 10px;
   border-radius: 7px 0 0 7px;
-  font-size: 20px;
 }
 
 .increment {
-  padding: 10px 14px 10px 10px;
+  padding: 10px;
   border-radius: 0 7px 7px 0;
 }
 footer {
@@ -246,6 +248,24 @@ footer {
 
   .card {
     width: 32%;
+  }
+
+  .list-item-bottom,
+  .list-item-top img {
+    width: 300px;
+  }
+
+  .list-item {
+    padding: 14px;
+  }
+
+  .decrement {
+    font-size: 40px;
+    padding: 13px;
+  }
+  .increment,
+  input[type="number"] {
+    font-size: $cwux-tablet-fontsize;
   }
 }
 

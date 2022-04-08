@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/index.css">
+    <script src="https://kit.fontawesome.com/a27baeba24.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <title>Snacks</title>
+</head>
+
+<body>
+    <!-- ***** Header Area Starts ***** -->
+    <header>
+        <div class="container">
+            <div class="top top-color">
+                <div class="back icon"><img src="./icons/back.svg"></div>
+                <div class="top-tittle">
+                    <h2>Snacks</h2>
+                </div>
+                <div class="cart icon"><img src="./icons/cart.svg"></div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Where the content goes ***** -->
+    <div class="main">
+        <!-- ***** Where whe edit the margin ***** -->
+        <div class="container">
+            <form class="listProducts">
+                <div class="list">
+
+                    <!-- ***** Where whe edit the margin ***** -->
+                    <a class="list-item">
+                        <div class="list-item-top">
+                            <img src="./img/products/food/snacks/15.png" alt="croissant">
+                        </div>
+                        <div class="list-item-bottom">
+                            <div class="list-item-name center">Croissant</div>
+                            <div class="list-item-price center">$5.5</div>
+                            <div class="list-item-quant">
+                                <div class="inputStepper">
+                                    <button type='button' class="decrement primary" id="decrement"
+                                        onclick="Stepper(this.id, '5')">
+                                        -
+                                    </button>
+                                    <input type="number" min="0" max="20" value="1" id="5" readOnly />
+                                    <button type='button' class="increment primary" id="increment"
+                                        onclick="Stepper(this.id, '5')">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- ***** Where whe edit the margin ***** -->
+                    <!-- ***** Where whe edit the margin ***** -->
+                    <div class="list-item">
+                        <div class="list-item-top">
+                            <img src="./img/products/food/snacks/18.png" alt="carrot cake">
+                        </div>
+                        <div class="list-item-bottom">
+                            <div class="list-item-name center">Carrot Cake</div>
+                            <div class="list-item-price center">$4.5</div>
+                            <div class="list-item-quant">
+                                <div class="inputStepper">
+                                    <button type='button' class="decrement primary" id="decrement"
+                                        onclick="Stepper(this.id, '1')">
+                                        -
+                                    </button>
+                                    <input type="number" min="0" max="20" value="1" id="1" readOnly />
+                                    <button type='button' class="increment primary" id="increment"
+                                        onclick="Stepper(this.id, '1')">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="list-item-top">
+                            <img src="./img/products/food/snacks/17.png" alt="CheeseScone">
+                        </div>
+                        <div class="list-item-bottom">
+                            <div class="list-item-name center">Cheese Scone</div>
+                            <div class="list-item-price center">$4.5</div>
+                            <div class="list-item-quant">
+                                <div class="inputStepper">
+                                    <button type='button' class="decrement primary" id="decrement"
+                                        onclick="Stepper(this.id, '17')">
+                                        -
+                                    </button>
+                                    <input type="number" min="0" max="20" value="1" id="17" readOnly />
+                                    <button type='button' class="increment primary" id="increment"
+                                        onclick="Stepper(this.id, '17')">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="list-item-top">
+                            <img src="./img/products/food/snacks/16.png" alt="donut">
+                        </div>
+                        <div class="list-item-bottom">
+                            <div class="list-item-name center">Donut</div>
+                            <div class="list-item-price center">$4.5</div>
+                            <div class="list-item-quant">
+                                <div class="inputStepper">
+                                    <button type='button' class="decrement primary" id="decrement"
+                                        onclick="Stepper(this.id, '16')">
+                                        -
+                                    </button>
+                                    <input type="number" min="0" max="20" value="1" id="16" readOnly />
+                                    <button type='button' class="increment primary" id="increment"
+                                        onclick="Stepper(this.id, '16')">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="list-item-top">
+                            <img src="./img/products/food/snacks/34.png" alt="brownie">
+                        </div>
+                        <div class="list-item-bottom">
+                            <div class="list-item-name center">Brownie</div>
+                            <div class="list-item-price center">$4.5</div>
+                            <div class="list-item-quant">
+                                <div class="inputStepper">
+                                    <button type='button' class="decrement primary" id="decrement"
+                                        onclick="Stepper(this.id, '34')">
+                                        -
+                                    </button>
+                                    <input type="number" min="0" max="20" value="1" id="34" readOnly />
+                                    <button type='button' class="increment primary" id="increment"
+                                        onclick="Stepper(this.id, '34')">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="list-item-top">
+                            <img src="./img/products/food/snacks/36.png" alt="brownie">
+                        </div>
+                        <div class="list-item-bottom">
+                            <div class="list-item-name center">Sweet Muffin</div>
+                            <div class="list-item-price center">$4.5</div>
+                            <div class="list-item-quant">
+                                <div class="inputStepper">
+                                    <button type='button' class="decrement primary" id="decrement"
+                                        onclick="Stepper(this.id, '36')">
+                                        -
+                                    </button>
+                                    <input type="number" min="0" max="20" value="1" id="36" readOnly />
+                                    <button type='button' class="increment primary" id="increment"
+                                        onclick="Stepper(this.id, '36')">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="list-item-top">
+                            <img src="./img/products/food/snacks/35.png" alt="muffin">
+                        </div>
+                        <div class="list-item-bottom">
+                            <div class="list-item-name center">Savery Muffin</div>
+                            <div class="list-item-price center">$4.5</div>
+                            <div class="list-item-quant">
+                                <div class="inputStepper">
+                                    <button type='button' class="decrement primary" id="decrement"
+                                        onclick="Stepper(this.id, '35')">
+                                        -
+                                    </button>
+                                    <input type="number" min="0" max="20" value="1" id="35" readOnly />
+                                    <button type='button' class="increment primary" id="increment"
+                                        onclick="Stepper(this.id, '35')">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+        </div>
+
+
+        <!-- ***** end of the margin ***** -->
+    </div>
+    </div>
+    <footer class="container">
+        <input class="button" type="submit" value="Checkout">
+    </footer>
+    </form>
+
+
+
+    <!-- ***** End of main ***** -->
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -155,13 +155,15 @@ header {
 
 .list-item {
   color: #d37130;
-  padding: 9px;
+  padding: 3px;
 }
 
 list-item-top,
-.list-item-quant {
+.list-item-quant,
+.list-item-name {
   display: flex;
   justify-content: center;
+  padding-bottom: 5px;
 }
 
 .list-item-top img {
@@ -171,6 +173,7 @@ list-item-top,
 .list-item-bottom {
   border-radius: 0 0 15px 15px;
   background-color: #d3d0d0;
+  width: 100px;
 }
 
 /*Inpput Stepper*/
@@ -199,13 +202,12 @@ input::-webkit-outer-spin-button {
 }
 
 .decrement {
-  padding: 10px 10px 10px 14px;
+  padding: 10px;
   border-radius: 7px 0 0 7px;
-  font-size: 20px;
 }
 
 .increment {
-  padding: 10px 14px 10px 10px;
+  padding: 10px;
   border-radius: 0 7px 7px 0;
 }
 
@@ -227,11 +229,30 @@ footer {
 
   p,
 .list-item {
-    font-size: 24px;
+    font-size: 32px;
   }
 
   .card {
     width: 32%;
+  }
+
+  .list-item-bottom,
+.list-item-top img {
+    width: 300px;
+  }
+
+  .list-item {
+    padding: 14px;
+  }
+
+  .decrement {
+    font-size: 40px;
+    padding: 13px;
+  }
+
+  .increment,
+input[type=number] {
+    font-size: 32px;
   }
 }
 /* For desktop: */

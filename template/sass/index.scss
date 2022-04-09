@@ -33,8 +33,15 @@ $border-radius: 15px;
   justify-content: $content;
 }
 
-body {
+body,
+html {
   font-family: $cwux-font;
+  height: 100%;
+  margin: 0;
+}
+
+.main {
+  flex: 1;
 }
 
 h2 {
@@ -311,14 +318,13 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
   @include responsive(flex, center);
   flex-direction: column;
   align-content: center;
   align-items: center;
 }
-.linkto {
-  width: 334px;
-}
+
 .logo-space {
   @include responsive(flex, center);
   flex-wrap: wrap;
@@ -333,19 +339,9 @@ footer {
   width: 100%;
   margin-top: 100px;
 }
-
-intro-button {
-  color: #fff;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  border-radius: 15px;
-  @include responsive(flex, center);
-  font-weight: bold;
+.skin {
   font-size: 22px;
-  flex-wrap: wrap;
-  width: 325px;
 }
-
 .container-intro-button {
   @include responsive(flex, center);
   align-items: center;

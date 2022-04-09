@@ -180,6 +180,14 @@ a:link {
   padding: 12px;
   border-radius: $border-radius;
 }
+.intro {
+  @include responsive(flex, center);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  margin: 0 5px 0 5px;
+  width: 325px;
+}
 
 .option-item {
   margin-top: 2px;
@@ -299,7 +307,48 @@ footer {
 }
 
 .bgfullimg {
-  background: url("../img/bg/bg.svg");
+  background: url("../img/bg/bg.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include responsive(flex, center);
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+.linkto {
+  width: 334px;
+}
+.logo-space {
+  @include responsive(flex, center);
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.qr-space {
+  @include responsive(flex, center);
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 100px;
+}
+
+intro-button {
+  color: #fff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 15px;
+  @include responsive(flex, center);
+  font-weight: bold;
+  font-size: 22px;
+  flex-wrap: wrap;
+  width: 325px;
+}
+
+.container-intro-button {
+  @include responsive(flex, center);
+  align-items: center;
 }
 
 /* For tablets: */

@@ -72,6 +72,16 @@ header {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.qr-space {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 100px;
 }
 
 .food-menu-category {
@@ -171,18 +181,24 @@ header {
 }
 
 .intro-button {
-  width: 150px;
-  margin-top: 35px;
   color: #FFF;
   background-color: #D37130;
-  border: none;
-  padding-left: 100px;
-  padding-right: 100px;
   padding-top: 30px;
   padding-bottom: 30px;
   border-radius: 15px;
-  text-align: center;
+  display: flex;
+  font-weight: bold;
+  font-size:  22px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 325px;
 }
+
+  .container-intro-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
 
 /*Inpput Stepper*/
 .inputStepper {

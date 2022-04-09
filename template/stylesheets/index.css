@@ -66,6 +66,17 @@ header {
   width: 40%;
   border-radius: 15px;
 }
+.bgfullimg {
+  background: url("../introimg/bg\ coffee\ and\ bagel.jpeg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .logo-space {
   display: flex;

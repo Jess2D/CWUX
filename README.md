@@ -30,5 +30,12 @@ By validating the prototype with the client and testing with the user, we develo
 - Formative UX techniques
 - Modern JavaScript application
 
+## Local development
 
+### Watch html files
+- Using VsCode, install the `ritwickdey.liveserver` 
+- This extension will run a live server locally. 
+- It will watch for changes in your files and automatically refresh the browser.
 
+### Watch and compile css files
+- Using VsCode's terminal, run `npm start`, this will watch your sass file and auto compile at every change.

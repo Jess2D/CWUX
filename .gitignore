@@ -1,4 +1,4 @@
-node_modules
+node_modules/
 stylesheets
 .DS_Store
 .sass-cache

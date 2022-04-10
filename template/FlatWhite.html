@@ -35,79 +35,77 @@
             <div class="image-product device">
                 <img src="./img/products/hot drinks/coffees/5.png" alt="image product">
             </div>
-            <h4>Price $5.2 </h4>
             <form class="choose-option" action="Checkout.html" method="get">
-                <div class="radio-group">
-                    <input type="radio" id="option-one" name="selector">
-                    <label for="option-one">One</label>
-                    <input type="radio" id="option-two" name="selector">
-                    <label for="option-two">Two</label>
-                    <input type="radio" id="option-three" name="selector">
-                    <label for="option-three">Three</label>
-                    <div class="type">
-                        <h4>Size </h4>
-                        <div class="option-category">
-                            <div class="option-item">
-                                <div class="option" id="regular">
-                                    <input type="radio" class="option" id="regular" name="regular"
-                                        value="englishbreakfast">
-                                </div>
-                                <label>English Breakfast</label>
-                            </div>
-                            <div class="option-item">
-                                <div class="option" id="large">
-                                    <input type="radio" class="option" id="2" name="large" value="earl gray">
-                                </div>
-                                <label>Earl Gray</label>
-                            </div>
-                        </div>
+                <h3>Price $5.2 </h3>
+                <div class="type">
+                    <h4>Size </h4>
+                    <div class="radio-group">
+                        <input type="radio" id="option-one" name="size" checked>
+                        <label for="option-one" class="item-group radius">Large</label>
+                        <input type="radio" id="option-two" name="size">
+                        <label for="option-two" class="item-group radius">Regular</label>
                     </div>
-                    <div class="milk">
-                        <h4>Milk</h4>
-                        <div class="option-category">
-                            <div class="option-item">
-                                <div class="option" id="milk1">
-                                    <input type="radio" class="option" id="6" name="milk" value="0">
-                                </div>
-                                <label>No milk</label>
-                            </div>
-                            <div class="option-item">
-                                <div class="option" id="milk2">
-                                    <input type="radio" class="option" id="7" name="milk" value="standart">
-                                </div>
-                                <label>Standart</label>
-                            </div>
-                            <div class="option-item">
-                                <div class="option" id="milk3">
-                                    <input type="radio" class="option" id="8" name="milk" value="trim">
-                                </div>
-                                <label>Trim</label>
-                            </div>
-                            <div class="option-item">
-                                <div class="option" id="milk4">
-                                    <input type="radio" class="option" id="9" name="milk" value="soy">
-                                </div>
-                                <label>Soy</label>
-                            </div>
-                            <div class="option-item">
-                                <div class="option" id="milk4">
-                                    <input type="radio" class="option" id="oat" name="milk" value="oat">
-                                </div>
-                                <label>Oat</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <h4>Note </h4>
-                    <textarea class="note" name="note">Enter text here...</textarea>
                 </div>
+                <div class="milk ">
+                    <h4>Milk</h4>
+                    <div class="radio-group responsive">
+                        <input type="radio" id="standart" name="milk" checked>
+                        <label for="standart" class="item-group radius">Standart</label>
+                        <input type="radio" id="trim" name="milk">
+                        <label for="trim" class="item-group radius">Trim</label>
+                        <input type="radio" id="oat" name="milk">
+                        <label for="oat" class="item-group radius">Oat</label>
+                        <input type="radio" id="soy" name="milk">
+                        <label for="soy" class="item-group radius">Soy</label>
+                        <input type="radio" id="almond" name="milk">
+                        <label for="almond" class="item-group radius">Almond</label>
+                        <input type="radio" id="coconut" name="milk">
+                        <label for="coconut" class="item-group radius">Coconut</label>
+                    </div>
+                </div>
+                <div class="extrashot">
+                    <h4>Shot</h4>
+                    <div class="radio-group">
+                        <input type="radio" id="double" name="extrashot" checked>
+                        <label for="double" class="item-group radius">Double Shot</label>
+                        <input type="radio" id="extra" name="extrashot">
+                        <label for="extra" class="item-group radius">Triple Shot</label>
+                        <input type="radio" id="single" name="extrashot">
+                        <label for="single" class="item-group radius" class="item-group radius">Single Shot</label>
+                    </div>
+                </div>
+                <div class="extrashot">
+                    <h4>Flavor</h4>
+                    <div class="radio-group">
+                        <input type="radio" class="item-group" id="noflavor" name="extrasf" checked>
+                        <label for="noflavor" class="item-group radius">No extra flavor</label>
+                        <input type="radio" id="vanila" name="extrasf">
+                        <label for="vanila" class="item-group radius">Vanila Shot</label>
+                        <input type="radio" id="caramel" name="extrasf">
+                        <label for="caramel" class="item-group radius">Caramel</label>
+                    </div>
+                </div>
+                <div class="extras">
+                    <h4>Extras</h4>
+                    <div class="radio-group">
+                        <input type="radio" id="noextras" name="extras" checked>
+                        <label for="noextras" class="item-group radius">No Extras</label>
+                        <input type="radio" id="cream" name="extras">
+                        <label for="cream" class="item-group radius">Cream</label>
+                        <input type="radio" id="hws" name="extras">
+                        <label for="hws" class="item-group radius">Hot Water on the side</label>
+                    </div>
+                </div>
+                <h4>Notes </h4>
+                <textarea class="note" name="note"></textarea>
         </div>
-        <!-- ***** End of main ***** -->
+    </div>
+    <!-- ***** End of main ***** -->
 
-        <footer class="container">
-            <input class="button" type="submit" value="Add to cart">
-        </footer>
-        </form>
+    <footer class="container">
+        <input class="button" type="submit" value="Add to cart">
+    </footer>
+    </form>
 
 
 </body>

@@ -7,21 +7,15 @@ input[type="radio"] {
 label {
   display: inline-block;
   cursor: pointer;
-  font-weight: bold;
   padding: 5px 20px;
 }
 
 input[type="radio"]:checked + label {
-  color: red;
-  background: blue;
+  color: #d3d0d0;
+  background: #673324;
 }
 
-label + input[type="radio"] + label {
-  border-left: solid 3px pink;
-}
 .radio-group {
-  display: inline-block;
-  margin: 20px;
-  border-radius: 10px;
+  margin: 14px;
   overflow: hidden;
 }

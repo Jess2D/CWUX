@@ -37,7 +37,6 @@ body,
 html {
   font-family: $cwux-font;
   height: 100%;
-  margin: 0;
 }
 
 .main {
@@ -75,7 +74,19 @@ textarea {
   color: $cwux-color;
 }
 
+.responsive {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.item-group {
+  margin-top: 12px;
+}
 /* Mobile: */
+
 header {
   width: 100%;
 }
@@ -279,6 +290,9 @@ input::-webkit-outer-spin-button {
 }
 .list-item-quant {
   padding: 12px;
+}
+.choose-option h3 {
+  font-weight: 300;
 }
 
 .choose-option h4 {
@@ -510,6 +524,10 @@ footer {
 
   .food-menu {
     align-items: baseline;
+  }
+
+  .item-group {
+    margin-top: 0;
   }
 }
 

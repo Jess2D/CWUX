@@ -33,8 +33,15 @@ $border-radius: 15px;
   justify-content: $content;
 }
 
-body {
+body,
+html {
   font-family: $cwux-font;
+  height: 100%;
+  margin: 0;
+}
+
+.main {
+  flex: 1;
 }
 
 h2 {
@@ -180,6 +187,14 @@ a:link {
   padding: 12px;
   border-radius: $border-radius;
 }
+.intro {
+  @include responsive(flex, center);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  margin: 0 5px 0 5px;
+  width: 325px;
+}
 
 .option-item {
   margin-top: 2px;
@@ -299,7 +314,107 @@ footer {
 }
 
 .bgfullimg {
-  background: url("../img/bg/bg.svg");
+  background: url("../img/bg/bg.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  @include responsive(flex, center);
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.logo-space {
+  @include responsive(flex, center);
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.qr-space {
+  @include responsive(flex, center);
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 100px;
+}
+.skin {
+  font-size: 22px;
+}
+.container-intro-button {
+  @include responsive(flex, center);
+  align-items: center;
+}
+
+.greeting h1 {
+  font-size: $mobile-h1;
+  color: $primary0;
+}
+.greeting h3 {
+  font-size: $mobile-h3;
+  color: $primary0;
+  font-weight: 100;
+}
+.food-menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.food-menu-category a:link {
+  text-decoration: none;
+  color: black;
+}
+.food-menu-category a:visited {
+  color: black;
+}
+
+.food-menu-category a:hover {
+  cursor: pointer;
+  color: #c7b0a8;
+}
+
+.food-menu-category a:visited {
+  cursor: pointer;
+  color: #f0b75d;
+}
+
+.food-menu-category p {
+  color: #0d0221;
+}
+
+.food-menu-category {
+  @include responsive(flex, center);
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  width: 153px;
+}
+.food-menu-category-img {
+  background-color: $primary1;
+  display: flex;
+  align-content: center;
+  padding: 22px;
+  border-radius: 15px;
+}
+
+.swiper {
+  height: 126px;
+  width: 349px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.swiper-wrapper {
+  display: flex;
+  flex-direction: row;
 }
 
 /* For tablets: */
@@ -348,6 +463,23 @@ footer {
   .increment,
   input[type="number"] {
     font-size: $cwux-tablet-fontsize;
+  }
+
+  .deals {
+    display: flex;
+  }
+
+  .tablet {
+    margin-left: 12px;
+    flex-grow: 1;
+  }
+
+  .swiper {
+    height: auto;
+  }
+
+  .food-menu {
+    align-items: baseline;
   }
 }
 

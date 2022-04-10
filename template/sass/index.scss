@@ -360,8 +360,30 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 34px;
+  gap: 12px;
 }
+.food-menu-category a:link {
+  text-decoration: none;
+  color: black;
+}
+.food-menu-category a:visited {
+  color: black;
+}
+
+.food-menu-category a:hover {
+  cursor: pointer;
+  color: #c7b0a8;
+}
+
+.food-menu-category a:visited {
+  cursor: pointer;
+  color: #f0b75d;
+}
+
+.food-menu-category p {
+  color: #0d0221;
+}
+
 .food-menu-category {
   @include responsive(flex, center);
   flex-direction: column;
@@ -375,6 +397,24 @@ footer {
   align-content: center;
   padding: 22px;
   border-radius: 15px;
+}
+
+.swiper {
+  height: 126px;
+  width: 349px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.swiper-wrapper {
+  display: flex;
+  flex-direction: row;
 }
 
 /* For tablets: */
@@ -423,6 +463,23 @@ footer {
   .increment,
   input[type="number"] {
     font-size: $cwux-tablet-fontsize;
+  }
+
+  .deals {
+    display: flex;
+  }
+
+  .tablet {
+    margin-left: 12px;
+    flex-grow: 1;
+  }
+
+  .swiper {
+    height: auto;
+  }
+
+  .food-menu {
+    align-items: baseline;
   }
 }
 

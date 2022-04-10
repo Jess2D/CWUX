@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Jess2D/CWUX/issues"
   },
-  "homepage": "https://github.com/Jess2D/CWUX#readme"
+  "homepage": "https://github.com/Jess2D/CWUX#readme",
+  "devDependencies": {
+    "sass": "^1.50.0"
+  }
 }

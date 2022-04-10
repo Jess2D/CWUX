@@ -347,9 +347,34 @@ footer {
   align-items: center;
 }
 
-.geeting h1 {
-  font-size: $tablet-h1;
+.greeting h1 {
+  font-size: $mobile-h1;
   color: $primary0;
+}
+.greeting h3 {
+  font-size: $mobile-h3;
+  color: $primary0;
+  font-weight: 100;
+}
+.food-menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 34px;
+}
+.food-menu-category {
+  @include responsive(flex, center);
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  width: 153px;
+}
+.food-menu-category-img {
+  background-color: $primary1;
+  display: flex;
+  align-content: center;
+  padding: 22px;
+  border-radius: 15px;
 }
 
 /* For tablets: */

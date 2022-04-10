@@ -442,8 +442,9 @@ footer {
   flex-grow: 1;
 }
 
-.coffee-img img {
-  border-radius: 15px 0px 0px 15;
+.coffee img {
+  border-radius: 15px;
+  padding: 6px;
 }
 
 /* For tablets: */

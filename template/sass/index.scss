@@ -71,6 +71,10 @@ textarea {
   border-radius: $border-radius;
 }
 
+.white {
+  color: $cwux-color;
+}
+
 /* Mobile: */
 header {
   width: 100%;
@@ -415,6 +419,31 @@ footer {
 .swiper-wrapper {
   display: flex;
   flex-direction: row;
+}
+.list-coffees {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 6px;
+}
+
+.coffee {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+}
+.coffee-description {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.coffee-img img {
+  border-radius: 15px 0px 0px 15;
 }
 
 /* For tablets: */

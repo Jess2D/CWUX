@@ -228,6 +228,10 @@ a:link {
   background-image: url(../icons/radio-hover.png);
 }
 
+.invisible {
+  display: none;
+}
+
 /* List Products*/
 .list {
   @include responsive(flex, flex-start);

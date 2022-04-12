@@ -791,6 +791,17 @@ input[type="radio"]:checked + label {
     align-content: flex-end;
     justify-content: center;
   }
+
+  .payment {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 171px;
+  }
+
+  .payment-form {
+    gap: 3px;
+  }
 }
 
 /* For desktop: */

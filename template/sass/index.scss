@@ -56,7 +56,11 @@ html {
 }
 
 .main {
-  flex: 1;
+  min-height: calc(100vh - 134px);
+}
+
+.footer {
+  height: 50px;
 }
 
 h2 {
@@ -103,6 +107,7 @@ textarea {
 }
 .card-vertical {
   width: 335px;
+  height: 168px;
 }
 .results {
   margin-left: 8px;
@@ -221,7 +226,6 @@ a:link {
 
 .button {
   width: 100%;
-  margin-top: 35px;
   color: $cwux-color;
   background-color: $primary1;
   border: none;
@@ -371,10 +375,6 @@ input::-webkit-outer-spin-button {
   text-align: center;
 }
 
-footer {
-  display: flex;
-}
-
 .bgfullimg {
   background: url("../img/bg/bg.jpeg");
   background-position: center;
@@ -522,11 +522,64 @@ button a:hover {
   height: auto;
 }
 
+.card-vertical p,
+.card-vertical .increment,
+.card-vertical .decrement,
+.card-vertical input[type="number"] {
+  font-size: 12px;
+}
+
+.location {
+  background-color: $primary0;
+  padding: 12px;
+  border-radius: 15px;
+  color: $cwux-color;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px 20px;
+}
+
+input[type="radio"]:checked + label {
+  color: #d3d0d0;
+  background: #673324;
+}
+
+.radio-group {
+  margin: 14px;
+  overflow: hidden;
+}
+
+.side-info {
+  margin-top: 12px;
+  @include responsive-container(
+    flex,
+    column,
+    flex-start,
+    flex-start,
+    flex-start,
+    wrap
+  );
+  gap: 12px;
+}
+
 /* For tablets: */
 @media only screen and (min-width: 600px) {
-  h2,
-  .button {
+  h2 {
     font-size: $tablet-h2;
+  }
+
+  .button {
+    font-size: 16px;
   }
 
   .top img {
@@ -599,6 +652,9 @@ button a:hover {
   }
   .image-product img {
     height: 400px;
+  }
+  .main {
+    min-height: calc(100vh - 162px);
   }
 
   .list-item {

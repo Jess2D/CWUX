@@ -62,13 +62,22 @@
                     </div>
                 </div>
             </div>
-            <h3>Total : 5.2</h3>
-            <footer class="container">
-                <button class="button"><a href="Payment.html">Payment</a></button>
-            </footer>
+            <div class="side-info ">
+                <h4>Total : 5.2</h4>
+                <h4> Location:</h4>
+                <div class="radio-group">
+                    <input type="radio" id="here" name="location" value="Here" checked>
+                    <label for="here" class="item-group radius">Have It here</label>
+                    <input type="radio" id="takeaway" name="location" value="Cretakeaway">
+                    <label for="takeaway" class="item-group radius">Take it away</label>
+                </div>
+            </div>
         </div>
     </div>
     </div>
+    <footer class="footer">
+        <button class="button"><a href="Payment.html">Payment</a></button>
+    </footer>
     <script src="./js/stepper.js"></script>
     <script src="./js/total.js"></script>
 </body>

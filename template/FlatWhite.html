@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/index.css">
+    <link rel="stylesheet" href="stylesheets/teste.css">
+    <script src="https://kit.fontawesome.com/a27baeba24.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <title>Our Siganture Coffees</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="top top-color">
+                <a class="back icon" href="List-Hot-Drinks.html"><img src="./icons/back.svg"></a>
+                <div class="top-tittle">
+                    <h2>Flat White</h2>
+                </div>
+                <div class="cart icon"><img src="./icons/cart.svg"></div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="container options">
+            <div class="image-product device">
+                <img src="./img/products/hot drinks/coffees/5.png" alt="image product">
+            </div>
+            <form class="choose-option" action="Checkout2.html" method="get">
+                <input type="text" class="invisible" name="product" value="Flat White">
+                <input type="text" class="invisible" name="price" value="$5.2 ">
+                <h3 name="price " value="$5.2">Price $5.2 </h3>
+                <div class="type">
+                    <h4>Size </h4>
+                    <div class="radio-group">
+                        <input type="radio" id="option-one" name="size" value="Large" checked>
+                        <label for="option-one" class="item-group radius">Large</label>
+                        <input type="radio" id="option-two" name="size" value="Regular">
+                        <label for="option-two" class="item-group radius">Regular</label>
+                    </div>
+                </div>
+                <div class="milk ">
+                    <h4>Milk</h4>
+                    <div class="radio-group responsive">
+                        <input type="radio" id="standart" name="milk" value="Standart" checked>
+                        <label for="standart" class="item-group radius">Standart</label>
+                        <input type="radio" id="trim" name="milk" value="Trim">
+                        <label for="trim" class="item-group radius">Trim</label>
+                        <input type="radio" id="oat" name="milk" value="Oat">
+                        <label for="oat" class="item-group radius">Oat</label>
+                        <input type="radio" id="soy" name="milk">
+                        <label for="soy" class="item-group radius">Soy</label>
+                        <input type="radio" id="almond" name="milk" value="Almond">
+                        <label for="almond" class="item-group radius">Almond</label>
+                        <input type="radio" id="coconut" name="milk" value="Coconut">
+                        <label for="coconut" class="item-group radius">Coconut</label>
+                    </div>
+                </div>
+                <div class="extrashot">
+                    <h4>Shot</h4>
+                    <div class="radio-group">
+                        <input type="radio" id="double" name="extrashot" value="Double Shot" checked>
+                        <label for="double" class="item-group radius">Double Shot</label>
+                        <input type="radio" id="extra" name="extrashot" value="Extra Shot">
+                        <label for="extra" class="item-group radius">Triple Shot</label>
+                        <input type="radio" id="single" name="extrashot" value="Single Shot">
+                        <label for="single" class="item-group radius" class="item-group radius">Single Shot</label>
+                    </div>
+                </div>
+                <div class="extrashot">
+                    <h4>Flavor</h4>
+                    <div class="radio-group">
+                        <input type="radio" class="item-group" id="noflavor" name="extrasf" value="No Flavor" checked>
+                        <label for="noflavor" class="item-group radius">No extra flavor</label>
+                        <input type="radio" id="vanila" name="extrasf">
+                        <label for="vanila" class="item-group radius" value="Vanila Shot">Vanila Shot</label>
+                        <input type="radio" id="caramel" name="extrasf">
+                        <label for="caramel" class="item-group radius" value="Caramel Shot">Caramel</label>
+                    </div>
+                </div>
+                <div class="extras">
+                    <h4>Extras</h4>
+                    <div class="radio-group">
+                        <input type="radio" id="noextras" name="extras" value="No more Extras" checked>
+                        <label for="noextras" class="item-group radius">No Extras</label>
+                        <input type="radio" id="cream" name="extras" value="Cream">
+                        <label for="cream" class="item-group radius">Cream</label>
+                        <input type="radio" id="hws" name="extras" value="Hot Water on the side">
+                        <label for="hws" class="item-group radius">Hot Water on the side</label>
+                    </div>
+                </div>
+                <h4>Notes </h4>
+                <textarea class="note" name="note"></textarea>
+        </div>
+    </div>
+
+    <footer class="container">
+        <input class="button" type="submit" value="Add to cart">
+    </footer>
+    </form>
+
+</body>
+
+</html>

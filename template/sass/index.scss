@@ -573,6 +573,14 @@ input[type="radio"]:checked + label {
   gap: 12px;
 }
 
+.margin-top {
+  margin-top: 12px;
+}
+.credit img {
+  width: 326px;
+  height: 153px;
+}
+
 /* For tablets: */
 @media only screen and (min-width: 600px) {
   h2 {

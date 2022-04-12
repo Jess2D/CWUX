@@ -71,6 +71,96 @@ textarea {
   border-radius: $border-radius;
 }
 
+/* Confirmation HTML: */
+
+.logo-confirmation img {
+  width: 20%;
+  max-width: 120px;
+}
+
+.confirmation-title {
+  color: $primary1;
+  text-align: center;
+  font-size: 29px;
+  font-weight: 400;
+  margin-top: -95px;
+  padding-bottom: 60px;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.circledisplay{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+
+.circle {
+ border-radius: 50%;
+ width: 100px;
+ height: 100px;
+ box-sizing: border-box;
+ display:inline-block;
+ gap: 550px;
+}
+
+.circle-green {
+  background: rgba(0, 154, 6, 0.24);
+  border: 1px solid #009A06;
+}
+
+.circle-peach {
+  background: rgba(248, 217, 169, 0.55);
+  border: 1px solid black;
+}
+
+.centered-img {
+  padding-top: 38%;
+  text-align: center;
+}
+
+.text-circle {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.containerreview {
+  border-radius: 20px 20px 0px 0px;
+  background:#F8D9A9;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 94%;
+  padding-left: 3%;
+  padding-right: 3%;
+  text-align: center;
+  }
+
+  .emojidisplay{
+    display: inline;
+    justify-content: center;
+    flex-wrap: wrap;
+   padding: 5%;
+  
+  }
+
+  .buttonconf {
+    width: 20%;
+    color: $cwux-color;
+    background-color: $primary1;
+    border: none;
+    padding: 5px;
+    border-radius: $border-radius;
+    font-size: 14px;
+  }
+
+
+  /* End Confirmation HTML: */
+
+
 /* Mobile: */
 header {
   width: 100%;

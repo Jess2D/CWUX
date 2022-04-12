@@ -1,0 +1,21 @@
+input[type="radio"] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px 20px;
+}
+
+input[type="radio"]:checked + label {
+  color: #d3d0d0;
+  background: #673324;
+}
+
+.radio-group {
+  margin: 14px;
+  overflow: hidden;
+}

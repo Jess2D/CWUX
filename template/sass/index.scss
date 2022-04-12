@@ -644,6 +644,21 @@ input[type="radio"]:checked + label {
   .item-group {
     margin-top: 0;
   }
+  .checkout {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-content: flex-end;
+    justify-content: center;
+  }
+  .list-coffees {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-content: flex-end;
+    justify-content: center;
+  }
 }
 
 /* For desktop: */
@@ -655,7 +670,7 @@ input[type="radio"]:checked + label {
     height: 400px;
   }
   .main {
-    min-height: calc(100vh - 162px);
+    min-height: calc(100vh - 200px);
   }
 
   .list-item {
@@ -663,7 +678,24 @@ input[type="radio"]:checked + label {
     justify-content: flex-start;
   }
 
+  .cart {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .button {
+    width: 40%;
+    margin-right: 19px;
+  }
+
   .hot-drinks-menu {
     flex-wrap: nowrap;
+  }
+
+  footer {
+    display: flex;
+    justify-content: flex-end;
   }
 }

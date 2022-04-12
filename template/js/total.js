@@ -18,6 +18,7 @@ const newItem = Object.fromEntries(searchParams);
 const cart = addOrCreateCart(newItem);
 
 let list = document.createElement("div");
+list.classList.add("cart");
 list.innerHTML = cart
   .map(
     (item) =>

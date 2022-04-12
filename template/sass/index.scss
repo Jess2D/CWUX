@@ -90,7 +90,6 @@ textarea {
   border-radius: $border-radius;
 }
 
-
 /* Confirmation HTML: */
 
 .logo-confirmation img {
@@ -111,7 +110,7 @@ textarea {
   text-align: center;
 }
 
-.circledisplay{
+.circledisplay {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -119,17 +118,17 @@ textarea {
 }
 
 .circle {
- border-radius: 50%;
- width: 100px;
- height: 100px;
- box-sizing: border-box;
- display:inline-block;
- gap: 550px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+  display: inline-block;
+  gap: 550px;
 }
 
 .circle-green {
   background: rgba(0, 154, 6, 0.24);
-  border: 1px solid #009A06;
+  border: 1px solid #009a06;
 }
 
 .circle-peach {
@@ -149,7 +148,7 @@ textarea {
 
 .containerreview {
   border-radius: 20px 20px 0px 0px;
-  background:#F8D9A9;
+  background: #f8d9a9;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -157,31 +156,27 @@ textarea {
   padding-left: 3%;
   padding-right: 3%;
   text-align: center;
-  }
+}
 
-  .emojidisplay{
-    display: inline;
-    justify-content: center;
-    flex-wrap: wrap;
-   padding: 5%;
-  
-  }
+.emojidisplay {
+  display: inline;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 5%;
+}
 
-  .buttonconf {
-    width: 20%;
-    color: $cwux-color;
-    background-color: $primary1;
-    border: none;
-    padding: 5px;
-    border-radius: $border-radius;
-    font-size: 14px;
-  }
+.buttonconf {
+  width: 20%;
+  color: $cwux-color;
+  background-color: $primary1;
+  border: none;
+  padding: 5px;
+  border-radius: $border-radius;
+  font-size: 14px;
+}
 
+/* End Confirmation HTML: */
 
-  /* End Confirmation HTML: */
-
-
-=======
 .white {
   color: $cwux-color;
 }
@@ -361,6 +356,42 @@ button:hover {
 
 .invisible {
   display: none;
+}
+
+/* Payment */
+.form-goup1 {
+  display: flex;
+  flex-direction: column;
+}
+.form-goup2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.payment {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.expo {
+  flex: 1;
+}
+
+input[type="text"],
+input[type="password"] {
+  border-bottom: 1px solid lightgrey;
+  border: {
+    top: none;
+    left: none;
+    right: none;
+  }
+  margin-top: 35px;
 }
 
 /* List Products*/
@@ -666,6 +697,14 @@ input[type="radio"]:checked + label {
   gap: 12px;
 }
 
+.margin-top {
+  margin-top: 12px;
+}
+.credit img {
+  width: 326px;
+  height: 153px;
+}
+
 /* For tablets: */
 @media only screen and (min-width: 600px) {
   h2 {
@@ -751,6 +790,17 @@ input[type="radio"]:checked + label {
     gap: 30px;
     align-content: flex-end;
     justify-content: center;
+  }
+
+  .payment {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 171px;
+  }
+
+  .payment-form {
+    gap: 3px;
   }
 }
 

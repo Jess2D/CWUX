@@ -4,7 +4,9 @@ function addOrCreateCart(product) {
     localStorage.setItem(itemName, JSON.stringify([]));
   }
   let storedCart = JSON.parse(localStorage.getItem(itemName));
-  storedCart.push(product);
+  if (window.location.search !== "") {
+    storedCart.push(product);
+  }
   localStorage.setItem(itemName, JSON.stringify(storedCart));
 
   return storedCart;
@@ -58,3 +60,8 @@ list.innerHTML = cart
   .join("");
 
 document.getElementById("list-coffees").append(list);
+
+//Clear the seacrh if its not empty
+if (window.location.search !== "") {
+  window.location.search = "";
+}

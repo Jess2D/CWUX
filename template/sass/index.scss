@@ -505,7 +505,6 @@ input::-webkit-outer-spin-button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
   @include responsive(flex, center);
   flex-direction: column;
   align-content: center;

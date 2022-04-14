@@ -13,11 +13,11 @@
     <header>
         <div class="container">
             <div class="top top-color">
-                <a class="back icon" href="Checkout2.html"><img src="./icons/back.svg"></a>
+                <a class="back icon" href="Checkout2.html"><img src="./icons/back.svg" alt="back-icon"></a>
                 <div class="top-tittle">
                     <h2>Payment</h2>
                 </div>
-                <div class="cart icon"><img src="./icons/cart.svg"></div>
+                <div class="cart icon"><img src="./icons/cart.svg" alt="cart-icon"></div>
             </div>
         </div>
     </header>
@@ -25,9 +25,9 @@
         <div class="container">
             <div class="payment">
                 <div class="credit margin-top">
-                    <img src="./img/creditCard.png">
+                    <img src="./img/creditCard.png" alt="credit-card">
                 </div>
-                <form class="payment-form">
+                <form class="payment-form" method="get" action="../template/Confirmation.html">
                     <div class="form-goup1 ">
                         <input type="text" class="margin-top" id="holdername" name="holdername"
                             placeholder="John Smith">
@@ -40,7 +40,7 @@
                         <input type="password" id="password" class="margin-top" name="password" placeholder="●●●"
                             minlength="3" maxlength="3">
                     </div>
-                    <a href="Confirmation.html"><input class="button margin-top" type="button" value="Purchase"></a>
+                    <input class="button margin-top" type="submit" value="Purchase">
                 </form>
 
             </div>

@@ -18,23 +18,23 @@
     <header>
         <div class="container">
             <div class="top top-color">
-                <a class="back icon" href="List-Hot-Drinks.html"><img src="./icons/back.svg"></a>
+                <a class="back icon" href="List-Hot-Drinks.html"><img src="./icons/back.svg" alt="back-icon"></a>
                 <div class="top-tittle">
                     <h2>Flat White</h2>
                 </div>
-                <div class="cart icon"><img src="./icons/cart.svg"></div>
+                <div class="cart icon"><img src="./icons/cart.svg" alt="cart-icon"></div>
             </div>
         </div>
     </header>
     <div class="main">
         <div class="container options">
             <div class="image-product device">
-                <img src="./img/products/hot drinks/coffees/25.png" alt="image product">
+                <img src="./img/products/hot%20drinks/coffees/25.png" alt="image product">
             </div>
             <form class="choose-option" action="Checkout2.html" method="get">
                 <input type="text" class="invisible" name="product" value="Flat White">
                 <input type="text" class="invisible" name="price" value="$5.2 ">
-                <h3 name="price " value="$5.2">Price $5.2 </h3>
+                <h3>Price $5.2 </h3>
                 <div class="type">
                     <h4>Size </h4>
                     <div class="radio-group">
@@ -69,7 +69,7 @@
                         <input type="radio" id="extra" name="extrashot" value="Extra Shot">
                         <label for="extra" class="item-group radius">Triple Shot</label>
                         <input type="radio" id="single" name="extrashot" value="Single Shot">
-                        <label for="single" class="item-group radius" class="item-group radius">Single Shot</label>
+                        <label for="single" class="item-group radius">Single Shot</label>
                     </div>
                 </div>
                 <div class="extrashot">
@@ -77,10 +77,10 @@
                     <div class="radio-group">
                         <input type="radio" class="item-group" id="noflavor" name="extrasf" value="No Flavor" checked>
                         <label for="noflavor" class="item-group radius">No extra flavor</label>
-                        <input type="radio" id="vanila" name="extrasf">
-                        <label for="vanila" class="item-group radius" value="Vanila Shot">Vanila Shot</label>
-                        <input type="radio" id="caramel" name="extrasf">
-                        <label for="caramel" class="item-group radius" value="Caramel Shot">Caramel</label>
+                        <input type="radio" id="vanila" name="extrasf" value="Vanila Shot">
+                        <label for="vanila" class="item-group radius">Vanila Shot</label>
+                        <input type="radio" id="caramel" name="extrasf" value="Caramel Shot">
+                        <label for="caramel" class="item-group radius">Caramel</label>
                     </div>
                 </div>
                 <div class="extras">
@@ -96,13 +96,14 @@
                 </div>
                 <h4>Notes </h4>
                 <textarea class="note" name="note"></textarea>
+
+                <footer>
+                    <input class="button" type="submit" value="Add to cart">
+                </footer>
+            </form>
         </div>
     </div>
 
-    <footer class="container">
-        <input class="button" type="submit" value="Add to cart">
-    </footer>
-    </form>
 
 </body>
 

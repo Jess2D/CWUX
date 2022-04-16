@@ -4,7 +4,8 @@
   "description": "![Alt text](https://github.com/Jess2D/CWUX/blob/main/template/img/screenshots/devices.png \"Morena Cafe\")",
   "main": "index.js",
   "scripts": {
-    "start": "sass --watch template/sass:template/stylesheets"
+    "start": "sass --watch template/sass:template/stylesheets",
+    "build:sass": "sass template/sass:template/stylesheets"
   },
   "repository": {
     "type": "git",
